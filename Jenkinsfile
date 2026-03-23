@@ -6,12 +6,12 @@ pipeline{
     stages {
         stage('compile'){
             steps{
-                sh 'javac Main.java'
+                bat 'javac Main.java'
             }
         }
         stage('run'){
             steps{
-                sh 'java Main'
+                bat 'java Main'
             }
         }
     }
