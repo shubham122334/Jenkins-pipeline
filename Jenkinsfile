@@ -15,4 +15,14 @@ pipeline{
             }
         }
     }
+
+   post {
+	always{
+	    echo 'deploment completed status loading'
+	}
+
+	success{
+	 echo 'deployed successfully'
+      }
+   }
 }
